@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EEEBDD;
+}
+
+/* Estilo de header */
+.header-fondo{
+    background-image: url(../img/portada2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 265px;
+    margin: 5px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin: 5px 0;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    border-radius: 100px;
+    z-index: 100;
+}
+
+/* Animación en logo */
+.girar{
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+h1{
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    margin: 5px;
+    padding: 1px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 200px;
+    height: 100px;
+}
+
+/* Menú de navegación */
+.navegacion{
+    color: #EEEBDD;
+    width: vh;
+    margin: 5px 0px;
+    position: absolute;
+    top: 225px;
+    text-align: center;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.navegacion-menu > li{ 
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    height: 35px;
+    margin: 0px 20px;
+    display: inline-block;
+    background-color: #810000;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.navegacion-menu > li >a{
+    display: block;
+    padding: 8px 50px;
+    color: #EEEBDD;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navegacion-menu__subMenu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 100;
+}
+
+.navegacion-menu__subMenu li{
+    background-color: #810000;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px 0px #c43737;
+}
+
+.navegacion-menu__subMenu li a{
+    display: block;
+    padding: 5px;
+    color: #EEEBDD;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-align: left;
+    text-decoration: none;
+}
+
+.navegacion-menu li:hover .navegacion-menu__subMenu{
+    display: block;
+}
+
+/* Estilo de Footer */
+.footer-caja2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+    left: 1300px;
+}
+
+.img-face{
+     height: 45px;
+     width: 45px;
+     margin: 0 4px;
+}
+.img-insta{
+    height: 45px;
+    width: 45px;
+    margin: 0 4px;
+}
+
+footer{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.footer-caja1{
+    display: inline-block;
+    width: 420px;
+}
+
+.footer-caja1__descripcion{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 450px;
+    text-align: start;
+    padding: 0;
+}
+
+h6{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+}
+
+.footer-caja3__descripcion{
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 5;
+    padding: 0;
+}
+
+/* Main de Home */
+main{
+    background-image: linear-gradient(to bottom, #810000, #EEEBDD);
+    height: 800px;
+}
+
+.home-texto{
+    display: inline-block;
+    width: 50%;
+    margin: 5px;
+    padding: 15px;
+    position: relative;
+    top: 5px;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #EEEBDD;
+    background-color: rgb(187, 101, 79);
+}
+
+.video-home{
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    left: 55%;
+    z-index: 50;
+    height: 415px;
+    width: 660px;
+}
+
+/* Main de Quienes Somos */
+.main-qs{
+    background-color: #810000;
+    height: 900px;
+    position: relative;
+}
+
+.qs-contenedor1{
+    background-color: #EEEBDD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    margin: 10px 20px;
+}
+
+.qs-contenedor2{
+    background-color: #EEEBDD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    margin: 10px 20px;
+}
+
+.main-qs__img1{
+    display: inline-block;
+    height: 284,44px;
+    width: 520px;
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+
+.main-qs__img2{
+    display: inline-block;
+    height: 284,44px;
+    width: 520px;
+    position: relative;
+    top: 0px;
+    right: 5px;
+}
+
+.main-qs__parrafo1{
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.main-qs__parrafo2{
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+    right: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    size: 100px;
+}
+
+
+/* Main de Tienda */
+
+.main-tienda{
+    background-color: #810000;
+    height: 1000px;
+
+}
+
+.tienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tienda-caja{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.tienda-caja__img{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    border: 3px solid black;
+}
+
+.tienda-caja__nombre{
+    display: inline-block;
+    height: 20px;
+    width: 400px;
+    padding: 2px 0;
+    margin: 3px 0 0 0;
+    background-color: #EEEBDD;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid black;
+}
+
+/* Main de Cursos */
+
+.main-cursos__cajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cursos-caja{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.cursos-caja__nombre{
+    display: inline-block;
+    height: 20px;
+    width: 400px;
+    padding: 2px 0;
+    margin: 3px 0 0 0;
+    background-color: #EEEBDD;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.cursos-caja__img{
+    display: inline-block;
+    height: 500px;
+    width: 400px;
+    border: 3px solid black;
+}
+
+/* Main Novedades */
+
+.novedades-caja__titulo{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    size: 60px;
+    color: #EEEBDD;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    background-color: black;
+    padding: 15px;
+    margin: 15px;
+}
+
+.novedades-caja__parrafo{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    size: 40px;
+    color: #EEEBDD;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
