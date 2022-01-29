@@ -27,7 +27,7 @@ body{
     z-index: 100;
 }
 
-/* Animación en logo */
+/* Animación en logo 
 .girar{
     animation-name: girar;
     animation-iteration-count: infinite;
@@ -42,7 +42,7 @@ body{
     to{
         transform: rotate(360deg);
     }
-}
+}*/
 
 h1{
     display: inline-block;
